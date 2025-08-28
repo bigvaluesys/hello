@@ -9,7 +9,7 @@ pipeline {
         }
         stage('build') { 
             steps {
-                sh "cd hello/ && javac bvs.java"
+                sh "cd hello/ && javac --release 21 bvs.java"
             }
         }
         stage('run') { 
