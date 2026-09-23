@@ -17,5 +17,10 @@ pipeline {
                 sh "cd hello/ && java bvs"
             }
         }
+        stage('Affichage') { 
+            steps {
+                sh "echo 'Hello BVS'"
+            }
+        }
     }
 }
